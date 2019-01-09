@@ -8,7 +8,7 @@
 | ----- | --------- | ----------- | ------- |------- |  
 |小	|不超过5	|最多50	|4C	|16GB|  
 |中	|不超过100	|最多500	|8C	|32GB|  
-|大	|超过100	|超过500	|[联系Rancher](https://www.cnrancher.com/contact/)||
+|大	|超过100	|超过500	|[联系Rancher](https://www.cnrancher.com/contact/)| |
 
 ### 三、节点规划  
 
