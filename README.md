@@ -135,6 +135,12 @@ helm install rancher-stable/rancher \
   --set hostname=demo.rancher.com  #配置rancher的域名
 ``` 
 
+5. 登录rancher页面
+![Image text](./images/rancher-login.jpg)
+![Image text](./images/rancher-home.jpg)
+
+等待local集群纳管成功后，再到安装rancher的执行机上执行以下命令，设置 cattle-cluster-agent 的hostname，如果域名能在公网访问，则跳过这一步
+
 ```
 kubectl -n cattle-system patch  deployments cattle-cluster-agent --patch '{
     "spec": {
@@ -173,6 +179,4 @@ kubectl -n cattle-system patch  daemonsets cattle-node-agent --patch '{
 }'
 ```
 
-5. rancher页面
-![Image text](./images/rancher-login.jpg)
-![Image text](./images/rancher-home.jpg)
+
